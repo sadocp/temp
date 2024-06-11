@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Record Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .section-title {
+            margin-top: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .contact-info, .patient-info {
+            margin-bottom: 20px;
+        }
+        .contact-info label, .patient-info label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-info input, .patient-info input {
+            width: calc(100% - 24px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wellness Record Template</h1>
+
+        <div class="contact-info">
+            <h2>Pet Parent(s)</h2>
+            <label for="primary-contact">Primary Contact Name:</label>
+            <input type="text" id="primary-contact" name="primary-contact">
+            <label for="primary-phone">Phone:</label>
+            <input type="tel" id="primary-phone" name="primary-phone">
+            <label for="primary-email">E-mail:</label>
+            <input type="email" id="primary-email" name="primary-email">
+            <label for="primary-address">Address:</label>
+            <input type="text" id="primary-address" name="primary-address">
+
+            <h2>Secondary Contact</h2>
+            <label for="secondary-contact">Name:</label>
+            <input type="text" id="secondary-contact" name="secondary-contact">
+            <label for="secondary-phone">Phone:</label>
+            <input type="tel" id="secondary-phone" name="secondary-phone">
+            <label for="secondary-email">E-mail:</label>
+            <input type="email" id="secondary-email" name="secondary-email">
+        </div>
+
+        <div class="patient-info">
+            <h2>Patient</h2>
+            <label for="patient-name">Name:</label>
+            <input type="text" id="patient-name" name="patient-name">
+            <label for="patient-species">Species:</label>
+            <input type="text" id="patient-species" name="patient-species">
+            <label for="patient-breed">Breed:</label>
+            <input type="text" id="patient-breed" name="patient-breed">
+            <label for="patient-color">Color:</label>
+            <input type="text" id="patient-color" name="patient-color">
+            <label for="patient-sex">Sex:</label>
+            <input type="text" id="patient-sex" name="patient-sex">
+            <label for="patient-age">Age:</label>
+            <input type="text" id="patient-age" name="patient-age">
+            <label for="patient-weight">Weight:</label>
+            <input type="text" id="patient-weight" name="patient-weight">
+        </div>
+
+        <h2 class="section-title">Vaccine Administered</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vaccine</th>
+                    <th>Administered Date</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rabies</td>
+                    <td><input type="date" name="rabies-administered-date"></td>
+                    <td><input type="date" name="rabies-due-date"></td>
+                </tr>
+                <tr>
+                    <td>DAPP</td>
+                    <td><input type="date" name="dapp-administered-date"></td>
+                    <td><input type="date" name="dapp-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Leptospirosis</td>
+                    <td><input type="date" name="lepto-administered-date"></td>
+                    <td><input type="date" name="lepto-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Bordetella</td>
+                    <td><input type="date" name="bordetella-administered-date"></td>
+                    <td><input type="date" name="bordetella-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Canine Influenza</td>
+                    <td><input type="date" name="canine-influenza-administered-date"></td>
+                    <td><input type="date" name="canine-influenza-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Lyme</td>
+                    <td><input type="date" name="lyme-administered-date"></td>
+                    <td><input type="date" name="lyme-due-date"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">Diagnostic or Service</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Status</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Physical Exam</td>
+                    <td><input type="text" name="physical-exam-status"></td>
+                    <td><input type="date" name="physical-exam-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Fecal w/ Giardia</td>
+                    <td><input type="text" name="fecal-status"></td>
+                    <td><input type="date" name="fecal-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Heartworm Test</td>
+                    <td><input type="text" name="heartworm-status"></td>
+                    <td><input type="date" name="heartworm-due-date"></td>
+                </tr>
+                <tr>
+                    <td>FeLV/FIV</td>
+                    <td><input type="text" name="felv-status"></td>
+                    <td><input type="date" name="felv-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Bloodwork Panel</td>
+                    <td><input type="text" name="bloodwork-status"></td>
+                    <td><input type="date" name="bloodwork-due-date"></td>
+                </tr>
+                <tr>
+                    <td>Urinalysis</td>
+                    <td><input type="text" name="urinalysis-status"></td>
+                    <td><input type="date" name="urinalysis-due-date"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
